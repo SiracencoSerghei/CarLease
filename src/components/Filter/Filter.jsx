@@ -5,7 +5,7 @@ import './Filter.css'
 
 export const Filter = ({ onSearch }) => {
   const [brand, setBrand] = useState('');
-  const [priceFrom, setPriceFrom] = useState('');
+  // const [priceFrom, setPriceFrom] = useState('');
   const [priceTo, setPriceTo] = useState('');
   const [mileageFrom, setMileageFrom] = useState('');
   const [mileageTo, setMileageTo] = useState('');
@@ -14,7 +14,7 @@ export const Filter = ({ onSearch }) => {
     // Call the onSearch function with the filter criteria
     onSearch({
       brand,
-      priceFrom,
+      // priceFrom,
       priceTo,
       mileageFrom,
       mileageTo,

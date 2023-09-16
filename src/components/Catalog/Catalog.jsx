@@ -1,6 +1,6 @@
 // Catalog.js
 // import React, { useState, useEffect } from 'react';
-import {Card} from '../Card/Card'; // Create Card component for displaying individual car listings
+// import {Card} from '../Card/Card'; // Create Card component for displaying individual car listings
 
 export const Catalog = () => {
   // const [cars, setCars] = useState([]); // State to store car listings

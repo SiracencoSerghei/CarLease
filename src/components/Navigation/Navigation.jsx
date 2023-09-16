@@ -1,6 +1,7 @@
 // Navigation.js
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Navigation.css';
 
 const Navigation = () => {
   return (
@@ -10,10 +11,10 @@ const Navigation = () => {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/loved">Beloved</Link>
+          <Link to="/catalog">Catalog</Link>
         </li>
         <li>
-          <Link to="/catalog">Catalog</Link>
+          <Link to="/favorites">Favorites</Link>
         </li>
       </ul>
     </nav>

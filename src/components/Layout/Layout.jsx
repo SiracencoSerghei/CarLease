@@ -2,17 +2,18 @@
 import React from 'react';
 import Navigation from '../Navigation/Navigation';
 import { Outlet } from 'react-router-dom'; // Import Outlet
+import './Layout.css';
 
 export const Layout = () => {
   return (
-    <div>
-      <header>
+    <div className="layout-container">
+      <header className="header">
         <Navigation />
       </header>
-      <main>
+      <main className="main-wrapper">
         <Outlet /> 
       </main>
-      <footer>
+      <footer className="footer">
         <p>&copy; 2023 AutoLeasing.</p>
       </footer>
     </div>

@@ -1,0 +1,53 @@
+/* CarFilter.css */
+
+/* Styles for mobile devices */
+@media (max-width: 768px) {
+    .car-filter {
+      padding: 10px;
+      background-color: #f0f0f0;
+    }
+  
+    /* Mobile styles for input fields */
+    .car-filter input[type="text"],
+    .car-filter input[type="number"] {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    /* Mobile styles for buttons */
+    .car-filter button {
+      width: 100%;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+  }
+  
+  /* Styles for desktop devices */
+  @media (min-width: 769px) {
+    .car-filter {
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  
+    /* Desktop styles for input fields */
+    .car-filter input[type="text"],
+    .car-filter input[type="number"] {
+      width: 100%;
+      margin-right: 10px;
+    }
+  
+    /* Desktop styles for buttons */
+    .car-filter button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+  }

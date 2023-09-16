@@ -1,8 +1,8 @@
 {
-  "name": "carlease",
+  "name": "CarLease",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://SiracencoSerghei.github.io/carlease/",
+  "homepage": "https://SiracencoSerghei.github.io/CarLease/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",

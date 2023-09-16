@@ -2,10 +2,10 @@ import React from 'react';
 // import CarFilter from './CarFilter';
 
 export const Favorite = () => {
-  const handleSearch = (filterCriteria) => {
-    // Implement search logic here using the filter criteria
-    console.log('Filter Criteria:', filterCriteria);
-  };
+  // const handleSearch = (filterCriteria) => {
+  //   // Implement search logic here using the filter criteria
+  //   console.log('Filter Criteria:', filterCriteria);
+  // };
 
   return (
     <div>

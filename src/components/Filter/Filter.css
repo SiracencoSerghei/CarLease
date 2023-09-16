@@ -1,0 +1,62 @@
+.container {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+}
+
+.inputs {
+  display: flex;
+  padding: 14px 18px;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  border-radius: 14px;
+  background: #f7f7fb;
+  outline: none;
+  border: none;
+  width: 100%;
+}
+/* Стили для контейнера */
+.input-container {
+    display: flex;
+    border-radius: 14px;
+    background: #f7f7fb;
+  }
+  
+  /* Стили для первого инпута */
+  .input-container input:first-child {
+    border-radius: 14px 0 0 14px;
+    background: #f7f7fb;
+    padding: 14px 18px;
+    flex-grow: 1;
+    outline: none;
+    border: none;
+  }
+  
+  /* Стили для второго инпута */
+  .input-container input:last-child {
+    border-radius: 0 14px 14px 0;
+    background: #f7f7fb;
+    padding: 14px 18px;
+    flex-grow: 1;
+    outline: none;
+    border: none;
+  }
+.labelWrapper {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  flex-grow: 1;
+  max-width: calc(50% - 9px);
+}
+.labels {
+  color: #8a8a89;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+}

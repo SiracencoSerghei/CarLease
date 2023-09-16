@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button, FormControl, FormLabel, Input, Stack, Icon } from '@chakra-ui/react';
 import { FaChevronDown } from "react-icons/fa";
+import './Filter.css'
 
 export const Filter = ({ onSearch }) => {
   const [brand, setBrand] = useState('');
@@ -21,15 +22,11 @@ export const Filter = ({ onSearch }) => {
   };
 
   return (
-    <Stack display="inline-flex" align-items="flex-end" gap="18px">
-      <h2>Car Filter</h2>
-      <FormControl
-        display="flex"
-        alignItems="flex-start"
-        gap="8px"
+    <Stack className='container'>
+      <FormControl className='labelWrapper'
       >
-        <FormLabel>Car Brand:</FormLabel>
-        <Input
+        <FormLabel className='labels'>Car Brand:</FormLabel>
+        <Input className='inputs'
           type="text"
           value={brand}
           onChange={e => setBrand(e.target.value)}
@@ -44,29 +41,31 @@ export const Filter = ({ onSearch }) => {
     color="gray.500" 
   />
       </FormControl>
-      <FormControl>
-        <FormLabel>Price per 1 Hour:</FormLabel>
-        <Input
+      <FormControl className='labelWrapper'>
+        <FormLabel className='labels'>Price per 1 Hour:</FormLabel>
+        <Input  className='inputs'
           type="number"
           value={priceTo}
           onChange={e => setPriceTo(e.target.value)}
           placeholder="To"
         />
       </FormControl>
-      <FormControl>
-        <FormLabel>Car Mileage (km):</FormLabel>
-        <Input
-          type="number"
-          value={mileageFrom}
-          onChange={e => setMileageFrom(e.target.value)}
-          placeholder="From"
-        />
-        <Input
-          type="number"
-          value={mileageTo}
-          onChange={e => setMileageTo(e.target.value)}
-          placeholder="To"
-        />
+      <FormControl className='labelWrapper'>
+        <FormLabel className='labels'>Car Mileage (km):</FormLabel>
+        <div className='input-container'>
+          <Input
+            type="number"
+            value={mileageFrom}
+            onChange={e => setMileageFrom(e.target.value)}
+            placeholder="From"
+          />
+          <Input
+            type="number"
+            value={mileageTo}
+            onChange={e => setMileageTo(e.target.value)}
+            placeholder="To"
+          />
+        </div>
       </FormControl>
       <Button colorScheme="teal" onClick={handleSearch}>
         Search

@@ -1,9 +1,11 @@
 /* Card.css */
 .card {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  margin: 16px;
-  padding: 16px;
+  display: flex;
+  max-width: 418px;
+  max-height: 280px;
+  flex-direction: column;
+  align-items: center;
+  /* flex-shrink: 0; */
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   background-color: #fff;
   transition: transform 0.2s ease-in-out;
@@ -14,20 +16,55 @@
 }
 
 .card-image img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .like-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
   background: none;
   border: none;
-  font-size: 1.5rem;
+  padding: 0;
   cursor: pointer;
+  outline: none;
+}
+.like-button:focus {
+  outline: none; 
+}
+.like-button:hover svg {
+  fill: rgb(4, 22, 127);
+}
+.like-button .liked {
+  width: 16px; 
+  height: 14px;
+ fill: #08ddf9;
+}
+.like-button  {
+  width: 16px; 
+  height: 14px;
+  /* fill: #000; */
+}
+.card-info {
+  display: flex;
+  align-items: flex-start;
+  /* justify-content: center; */
+  gap: 87px;
 }
 
 .card-info h3 {
   font-size: 1.2rem;
   margin: 8px 0;
+}
+.card-info p {
+  color: #121417;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
 }
 
 .open-button {
@@ -41,4 +78,20 @@
 
 .open-button:hover {
   background-color: #0056b3;
+}
+
+.card-span {
+  color: rgba(18, 20, 23, 0.5);
+  font-family: Manrope;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  padding: 0, 3px;
+}
+.svg {
+  width: 0px;
+  height: 16px;
+  stroke-width: 1px;
+  stroke: rgba(18, 20, 23, 0.1);
 }

@@ -1,0 +1,8 @@
+.car-listings {
+  display: flex;
+  width: 1184px;
+  height: 426px;
+  align-items: flex-start;
+  gap: 29px;
+  flex-shrink: 0;
+}

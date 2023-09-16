@@ -25,7 +25,10 @@ export const CarDetail = ({ car, onClose }) => {
           ✖
         </button>
         <h2>Car Details</h2>
-        {/* данные о машине */}
+        <h2>Car Details</h2>
+        <h2>Car Details</h2>
+        <h2>Car Details</h2>
+        <h2>Car Details</h2>
       </div>
     </div>
   );

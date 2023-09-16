@@ -4,7 +4,7 @@ import Navigation from '../Navigation/Navigation';
 import { Outlet } from 'react-router-dom'; // Import Outlet
 import './Layout.css';
 
-export const Layout = () => {
+const Layout = () => {
   return (
     <div className="layout-container">
       <header className="header">
@@ -19,3 +19,5 @@ export const Layout = () => {
     </div>
   );
 };
+
+export default Layout

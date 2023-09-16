@@ -1,14 +1,22 @@
-// import { lazy } from 'react';
+import { lazy, Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import { CatalogPage } from '../pages/CatalogPage';
-import { Favorites } from '../pages/Favorites';
-import { HomePage } from '../pages/HomePage';
-import { Layout } from '../components/Layout/Layout';
+
+const HomePage = lazy(() => import('../pages/HomePage'));
+const Favorites = lazy(() => import('../pages/Favorites'));
+const CatalogPage = lazy(() => import('../pages/CatalogPage'));
+const Layout = lazy(() => import('../components/Layout/Layout'));
 
 export const App = () => {
   return (
     <Routes>
-      <Route path="/" element={<Layout />}>
+      <Route
+        path="/"
+        element={
+          <Suspense fallback={<div>Loading...</div>}>
+            <Layout />
+          </Suspense>
+        }
+      >
         <Route index element={<HomePage />} />
         <Route path="/favorites" element={<Favorites />} />
         <Route path="/catalog" element={<CatalogPage />} />

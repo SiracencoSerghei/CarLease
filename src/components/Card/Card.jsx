@@ -1,17 +1,63 @@
-import React from 'react';
-// import CarFilter from './CarFilter';
+import React, {useState} from 'react';
+import ReactDOM from 'react-dom';
+import {CarDetail} from '../CarDetail/CarDetail'
+import './Card.css'
 
-export const Card = () => {
-  // const handleSearch = (filterCriteria) => {
-  //   // Implement  search logic here using the filter criteria
-  //   console.log('Filter Criteria:', filterCriteria);
-  // };
+export const Card = ({ car }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    console.log('Modal opened');
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
 
   return (
-    <div>
-      <h1>Your Card Component</h1>
-      {/* <CarFilter onSearch={handleSearch} /> */}
-      {/* Render car listing based on the search results */}
+    <div className="card">
+      <div className="card-image">
+        <img src={car.img} alt={car.make} />
+        <button className="like-button">❤️</button>
+      </div>
+      <div className="card-info">
+        <h3>{car.make}</h3>
+        <p>
+          {car.year} - ${car.price}
+        </p>
+      </div>
+      <div className="card-details">
+        <span>
+          {car.city}, {car.country}
+        </span>
+        <span>
+          {car.rentalCompany}
+        </span>
+        <span>
+          {car.type}
+        </span>
+        <span>
+          {car.model}
+        </span>
+        <span>
+          {car.mileage} km
+        </span>
+        <span>
+          {car.functionalities[0]}
+        </span>
+      </div>
+      <button className="open-button" onClick={openModal}>
+        Learn More
+      </button>
+
+      {isModalOpen && (
+        ReactDOM.createPortal(
+          <CarDetail car={car} onClose={closeModal} />,
+          document.getElementById('modal-root')
+        )
+      )}
     </div>
   );
 };

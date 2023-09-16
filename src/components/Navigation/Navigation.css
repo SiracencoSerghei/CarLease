@@ -25,10 +25,12 @@ nav ul li {
   
   nav a:hover {
     background-color: #0056b3; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   }
   
   
   nav a:focus {
     outline: none; 
+    background-color: #0056b3; 
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); 
   }

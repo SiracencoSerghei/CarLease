@@ -5,7 +5,7 @@ import { Filter } from '../Filter/Filter';
 export const Catalog = () => {
   const [cars, setCars] = useState([]);
   const [filteredCars, setFilteredCars] = useState([]);
-  const [filters, setFilters] = useState({ brand: '', price: '', mileage: '' });
+  // const [filters, setFilters] = useState({ brand: '', price: '', mileage: '' });
   const [loadMore, setLoadMore] = useState(8);
   const [carBrands, setCarBrands] = useState([]); // Состояние для хранения названий авто
 
@@ -26,31 +26,33 @@ export const Catalog = () => {
 
   useEffect(() => {
     const filtered = cars
-      .filter(car => {
-        if (filters.brand && car.make !== filters.brand) {
-          return false;
-        }
-        if (filters.price && car.price > parseFloat(filters.price)) {
-          return false;
-        }
-        if (filters.mileage && car.mileage > parseInt(filters.mileage)) {
-          return false;
-        }
-        return true;
-      })
+      // .filter(car => {
+      //   if (filters.brand && car.make !== filters.brand) {
+      //     return false;
+      //   }
+      //   if (filters.price && car.price > parseFloat(filters.price)) {
+      //     return false;
+      //   }
+      //   if (filters.mileage && car.mileage > parseInt(filters.mileage)) {
+      //     return false;
+      //   }
+      //   return true;
+      // })
       .slice(0, loadMore);
 
     setFilteredCars(filtered);
-  }, [cars, filters, loadMore]);
+  }, [cars,
+    //  filters,
+      loadMore]);
 
   const handleLoadMore = () => {
     setLoadMore(prevLoadMore => prevLoadMore + 8);
   };
 
-  const handleFilterChange = e => {
-    const { name, value } = e.target;
-    setFilters(prevFilters => ({ ...prevFilters, [name]: value }));
-  };
+  // const handleFilterChange = e => {
+  //   const { name, value } = e.target;
+  //   setFilters(prevFilters => ({ ...prevFilters, [name]: value }));
+  // };
 
   return (
     <div>

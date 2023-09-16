@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkCarLease=self.webpackChunkCarLease||[]).push([[651],{8651:function(e,n,r){r.r(n),r.d(n,{default:function(){return i}});r(2791);var s=r(184),t=function(){return(0,s.jsx)("div",{children:(0,s.jsx)("h1",{children:"Your Favorite Component"})})},i=function(){return(0,s.jsxs)("div",{children:[(0,s.jsx)("h1",{children:"Welcome to the Favorites Cars"}),(0,s.jsx)(t,{})]})}}}]);
+//# sourceMappingURL=651.4123baba.chunk.js.map

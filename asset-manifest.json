@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/CarLease/static/css/main.38ea58ca.css",
-    "main.js": "/CarLease/static/js/main.9f0df440.js",
-    "static/media/0939XV6TUaEDnSM7v4EkmYqwElo-960-730x548.jpg": "/CarLease/static/media/0939XV6TUaEDnSM7v4EkmYqwElo-960-730x548.b1891babdc86fc88ebc4.jpg",
+    "main.css": "/CarLease/static/css/main.6ea31baf.css",
+    "main.js": "/CarLease/static/js/main.f679af61.js",
+    "static/media/home-auto.jpg": "/CarLease/static/media/home-auto.13730623ba2a067d0363.jpg",
     "index.html": "/CarLease/index.html",
-    "main.38ea58ca.css.map": "/CarLease/static/css/main.38ea58ca.css.map",
-    "main.9f0df440.js.map": "/CarLease/static/js/main.9f0df440.js.map"
+    "main.6ea31baf.css.map": "/CarLease/static/css/main.6ea31baf.css.map",
+    "main.f679af61.js.map": "/CarLease/static/js/main.f679af61.js.map"
   },
   "entrypoints": [
-    "static/css/main.38ea58ca.css",
-    "static/js/main.9f0df440.js"
+    "static/css/main.6ea31baf.css",
+    "static/js/main.f679af61.js"
   ]
 }
